@@ -1,5 +1,7 @@
 # Docker image for [PHPLOC](https://github.com/sebastianbergmann/phploc)
 
+[![Build Status](https://travis-ci.org/dockerized-php/phploc.svg?branch=master)](https://travis-ci.org/dockerized-php/phploc)
+
 The image are based on [Alpine Linux](https://alpinelinux.org/) and built daily.
 Inside the container runs PHP 7.1. It also uses [tini](https://github.com/krallin/tini) as [init](https://en.wikipedia.org/wiki/Init).
 
