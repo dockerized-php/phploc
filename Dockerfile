@@ -10,5 +10,8 @@ RUN apk update --no-cache \
 RUN curl -L https://phar.phpunit.de/phploc.phar > /usr/local/bin/phploc \
     && chmod +x /usr/local/bin/phploc
 
+VOLUME ["/app"]
+WORKDIR /app
+
 ENTRYPOINT ["/sbin/tini", "--", "phploc"]
 CMD ["--help"]
